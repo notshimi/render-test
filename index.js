@@ -4,7 +4,7 @@ const cors = require("cors");
 const usersRouter = require("./routes/users");
 const loginRouter = require("./routes/login");
 const bodyParser = require("body-parser");
-const PORT = 3001;
+const PORT = process.env.port || 3001;
 
 app.use(express.json());
 app.use(cors());
