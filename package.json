@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon index.js",
-    "build:ui": "cd ../axios-prac && npm run build && cp -r build && ../express-prac"
+    "build:ui": "cd ../axios-prac && npm run build && cp -r build ../express-prac",
+    "deploy:full": "npm run build:ui && git add . && git commit -m \"ui build \" && git push"
   },
   "keywords": [],
   "author": "",
